@@ -33,6 +33,7 @@ loadtest http://localhost:3000/api/500000 -n 1000 -c 100
 1. Tiempo total: 626. 946 s
 2. Latencia media: 59610. 4 ms
 3. RPS: 2
+
 <img src="./img/loadtest_more_sin_cluster.png" alt="loadtest_more_sin_cluster_difference"></img>
 
 ### Con clúster
@@ -60,7 +61,7 @@ pm2 start sin_cluster.js -i 0
 - pm2 ecosystem
 - pm2 start ecosystem.config.js
 
-<img src="./img/pm2_file.png.png" alt="pm2_file"></img>
+<img src="./img/pm2_file.png" alt="pm2_file"></img>
 
 Podremos iniciar, reiniciar, recargar, detener y eliminar una aplicación con pm2.
 
